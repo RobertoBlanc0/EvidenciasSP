@@ -1,6 +1,6 @@
 ---
 title: Presentación sobre Actuadores
-layout: post
+layout: slide
 permalink: /actuadores/
 theme: moon
 
