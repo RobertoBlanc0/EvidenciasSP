@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación de Sensores BAJR</title>
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/white.css" id="theme">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Tipos de Sensores</h1>
+                <h2>Blanco Aguirre Jesus Roberto</h2>
+            </section>
+            <section>
+                <h1>Sensores Ópticos</h1>
+            </section>
+            <section>
+                <h2>Sensores Fotoeléctricos</h2>
+                <p><strong>Funcionalidad:</strong> Emite un haz de luz y detecta objetos al notar cambios en la luz recibida.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Precisión en distancias largas o cortas.</li>
+                    <li>Aplicaciones en automatización industrial y seguridad.</li>
+                    <li>Sensibilidad a interferencias ambientales.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Emite señales eléctricas PNP o NPN que se interpretan en sistemas de control (PLC).</p>
+            </section>
+
+            <section>
+                <h2>Sensores Infrarrojos (IR)</h2>
+                <p><strong>Funcionalidad:</strong> Detectan radiación infrarroja emitida por objetos, comúnmente asociada al calor.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Precisión en detección a varios metros.</li>
+                    <li>Resistencia a interferencias de luz ambiental.</li>
+                    <li>Aplicaciones en seguridad, termómetros y robótica.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Señales digitales procesadas por controladores (ej. PIR activan una señal eléctrica al detectar movimiento).</p>
+            </section>
+
+  
+            <section>
+                <h2>Sensores Láser</h2>
+                <p><strong>Funcionalidad:</strong> Emite un haz de luz láser para medir la distancia o detectar objetos con alta precisión.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Extremadamente precisos (hasta 1 mm de tolerancia).</li>
+                    <li>Rango de detección hasta 30 metros o más.</li>
+                    <li>Respuesta rápida ante cambios en el entorno.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Salidas digitales, con frecuencias altas para mayor precisión.</p>
+            </section>
+
+   
+            <section>
+                <h2>Cámaras CCD/CMOS</h2>
+                <p><strong>Funcionalidad:</strong> Convierte la luz en señales eléctricas. CCD transfiere la carga por un solo canal, CMOS procesa cada píxel individualmente.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>CCD: Alta calidad de imagen, bajo ruido, pero mayor consumo energético.</li>
+                    <li>CMOS: Mayor velocidad y menor consumo, ideal para dispositivos móviles.</li>
+                    <li>Aplicaciones en cámaras digitales, telescopios, y dispositivos médicos.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Generan datos analógicos que se convierten a digitales mediante convertidores A/D.</p>
+            </section>
+
+      
+            <section>
+                <h2>Fotoconductores</h2>
+                <p><strong>Funcionalidad:</strong> Cambian su resistencia en respuesta a la luz, permitiendo el paso de más corriente.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Alta sensibilidad a la luz.</li>
+                    <li>Usados en luces automáticas y fotómetros.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Variación de resistencia que se traduce en señales analógicas leídas por sistemas de control.</p>
+            </section>
+
+    
+            <section>
+                <h2>Células Fotovoltaicas</h2>
+                <p><strong>Funcionalidad:</strong> Convierte la luz solar en energía eléctrica mediante el efecto fotovoltaico.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Generación de energía limpia.</li>
+                    <li>Usos en sistemas de energía renovable.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Salida de corriente continua (DC), utilizada para alimentar dispositivos o almacenarse en baterías.</p>
+            </section>
+            <section>
+                <h2>Fotodiodos</h2>
+                <p><strong>Funcionalidad:</strong> Los fotodiodos son dispositivos semiconductores que convierten la luz en corriente eléctrica. Al absorber fotones, se generan pares electrón-hueco, lo que provoca una corriente proporcional a la cantidad de luz recibida</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Alta velocidad de respuesta, lo que los hace ideales para aplicaciones de alta frecuencia, como telecomunicaciones o sensores de luz</li>
+                    <li>Usados en sensores de imagen, detectores de luz y equipos médicos.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Generan una corriente eléctrica que puede ser medida por un circuito externo, generalmente utilizado en sistemas de procesamiento de señales.</p>
+            </section>
+
+            <section>
+                <h1>Sensores de Temperatura</h1>
+            </section>
+            <section>
+                <h2>Termopares</h2>
+                <p><strong>Funcionalidad:</strong> Dos metales generan un voltaje proporcional a la diferencia de temperatura, permitiendo calcular la temperatura.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Amplio rango de temperatura (-270 °C a 3100 °C).</li>
+                    <li>Precisión limitada, pero bajo costo.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Generan un bajo voltaje que requiere amplificación y compensación de unión fría.</p>
+            </section>
+
+            <section>
+                <h2>RTD (Detector de Temperatura por Resistencia)</h2>
+                <p><strong>Funcionalidad:</strong> Miden la temperatura mediante el cambio de resistencia de un material (usualmente platino). Cuando aumenta la temperatura, la resistencia aumenta proporcionalmente.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Alta precisión y repetibilidad.</li>
+                    <li>Rango de temperatura de -200 °C a 850 °C.</li>
+                    <li>Estabilidad a largo plazo, ideal para aplicaciones industriales de control preciso.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Configuración de 2, 3 o 4 hilos, con acondicionador de señal para convertir la resistencia en señal digital.</p>
+            </section>
+
+ 
+            <section>
+                <h2>Termistores</h2>
+                <p><strong>Funcionalidad:</strong> Son sensores semiconductores cuya resistencia varía significativamente con la temperatura. Hay dos tipos principales: NTC (resistencia disminuye con aumento de temperatura) y PTC (resistencia aumenta con el calor).</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Muy precisos en un rango limitado de temperatura (-40 °C a 300 °C).</li>
+                    <li>Tiempo de respuesta rápido, aunque menos estables a largo plazo que los RTD.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> La salida es resistiva, similar a los RTD, y requiere un circuito para convertir la resistencia en una lectura de temperatura utilizable.</p>
+            </section>
+
+
+            <section>
+                <h2>Sensores Infrarrojos (IR)</h2>
+                <p><strong>Funcionalidad:</strong> Miden la radiación térmica emitida por un objeto sin necesidad de contacto físico. Utilizan una termopila para convertir la radiación en una señal eléctrica.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Medición a distancia, ideal para objetos en movimiento o inaccesibles.</li>
+                    <li>Rango de temperatura de -70 °C a 1000 °C.</li>
+                    <li>No apto para mediciones de alta precisión en todas las aplicaciones.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Generan una señal eléctrica proporcional a la radiación infrarroja recibida, que se procesa para mostrar la temperatura.</p>
+            </section>
+
+
+            <section>
+                <h2>Sensores de Temperatura de Semiconductor</h2>
+                <p><strong>Funcionalidad:</strong> Utilizan la propiedad de ciertos semiconductores donde la tensión de salida varía linealmente con la temperatura.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Alta precisión y linealidad en un rango de -55 °C a 150 °C.</li>
+                    <li>Bajo costo y fácil integración en sistemas electrónicos.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> La salida es usualmente analógica (tensión o corriente), que se convierte a una señal digital para control o monitoreo.</p>
+            </section>
+            <section><h1>Sensores de Presión</h1></section>
+            <section>
+                <h2>Sensores Manométricos</h2>
+                <p><strong>Funcionalidad:</strong> Miden la presión relativa comparada con la presión atmosférica. Utilizan una membrana o diafragma que se deforma bajo la presión.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Precisión moderada, útil en aplicaciones industriales.</li>
+                    <li>Rango de presión amplio, desde milibares hasta cientos de bares.</li>
+                    <li>Resistencia a condiciones ambientales adversas.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Generan una señal analógica (mV, mA o voltios) procesada por controladores PLC o sistemas de monitoreo remoto.</p>
+            </section>
+
+            <section>
+                <h2>Sensores Absolutos</h2>
+                <p><strong>Funcionalidad:</strong> Miden la presión respecto al vacío absoluto (0 bar o atmósferas). Utilizan un diafragma en comparación con una cámara de referencia de vacío.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Alta precisión, útil donde las variaciones atmosféricas pueden causar errores.</li>
+                    <li>Aplicaciones industriales y científicas como meteorología y aeroespacial.</li>
+                    <li>Rango de medición moderado, hasta unos miles de bares.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Generan señales analógicas o digitales, con capacidad de comunicación mediante buses industriales como Modbus o HART.</p>
+            </section>
+
+            <section>
+                <h2>Sensores Diferenciales</h2>
+                <p><strong>Funcionalidad:</strong> Miden la diferencia de presión entre dos puntos dentro de un sistema. Son útiles en mediciones en ambos lados de restricciones, como filtros o válvulas.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Alta sensibilidad para pequeñas variaciones de presión.</li>
+                    <li>Amplio rango de aplicaciones, como control de flujo y monitoreo industrial.</li>
+                    <li>Estabilidad y precisión en entornos de alta presión.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Se comunican mediante señales eléctricas o digitales y se integran con protocolos Modbus, HART o sistemas inalámbricos.</p>
+            </section>
+
+            <section>
+                <h2>Sensores Piezoeléctricos</h2>
+                <p><strong>Funcionalidad:</strong> Utilizan el efecto piezoeléctrico, generando una carga eléctrica cuando se les aplica presión. Son útiles en aplicaciones dinámicas como automoción o aeroespacial.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Respuesta rápida, ideal para medir cambios rápidos de presión.</li>
+                    <li>Alta resistencia a condiciones adversas como altas temperaturas y vibraciones.</li>
+                    <li>Usos en aplicaciones dinámicas como mediciones de explosión o inyección de combustible.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Generan señales de carga eléctrica que se convierten en voltaje mediante acondicionadores de señal, procesados por sistemas de monitoreo.</p>
+            </section>
+
+            <section>
+                <h2>Sensores Capacitivos</h2>
+                <p><strong>Funcionalidad:</strong> Utilizan un condensador con una membrana flexible. La presión aplicada deforma la membrana, cambiando la capacitancia que se traduce en una señal eléctrica proporcional a la presión.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Alta precisión en rangos bajos de presión.</li>
+                    <li>Estables en condiciones de temperatura constantes.</li>
+                    <li>Aplicaciones en la medición de fluidos en sistemas neumáticos y médicos.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Generan señales eléctricas que se amplifican y se convierten en digitales, integrándose con protocolos como I2C, SPI o buses industriales.</p>
+            </section>
+            <section><h1>Sensores de Proximidad</h1></section>
+            <section>
+                <h2>Sensores Inductivos</h2>
+                <p><strong>Funcionalidad:</strong> Funcionan a través de un campo magnético alterno generado por una bobina interna. Detectan objetos metálicos mediante la disminución de la amplitud de la oscilación del circuito.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Detectan solo objetos metálicos (ferrosos y no ferrosos).</li>
+                    <li>Altamente resistentes a condiciones adversas como polvo o agua.</li>
+                    <li>Rango de detección corto (0-10 mm), extendible con configuraciones específicas.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Generan una señal digital de conmutación. Usan configuraciones NPN o PNP, conectándose mediante sistemas de tres o cuatro hilos.</p>
+            </section>
+
+            <section>
+                <h2>Sensores Capacitivos</h2>
+                <p><strong>Funcionalidad:</strong> Miden cambios en la capacitancia entre dos electrodos internos cuando un objeto se aproxima, afectando el campo electromagnético.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Detectan objetos sólidos y líquidos, incluso a través de materiales no metálicos como vidrio o plástico.</li>
+                    <li>Sensibles a la humedad y cambios de temperatura.</li>
+                    <li>Alcance de detección más corto (hasta 60 mm) que sensores ópticos o ultrasónicos.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Generan señales digitales con configuraciones de salida PNP o NPN, conectándose mediante tres o cuatro hilos.</p>
+            </section>
+
+            <section>
+                <h2>Sensores Ultrasónicos</h2>
+                <p><strong>Funcionalidad:</strong> Emiten pulsos de sonido de alta frecuencia que se reflejan en un objeto. El sensor mide el tiempo de retorno del eco para calcular la distancia al objeto.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Detectan objetos a distancias de hasta 15 metros.</li>
+                    <li>Eficaces para detectar objetos transparentes o brillantes.</li>
+                    <li>Sensibles a variaciones de temperatura y corrientes de aire.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Utilizan salidas digitales o analógicas, dependiendo de la aplicación. Ideales para monitoreo continuo de distancia.</p>
+            </section>
+
+            <section>
+                <h2>Sensores Ópticos</h2>
+                <p><strong>Funcionalidad:</strong> Detectan la presencia de objetos al emitir un haz de luz (visible o infrarrojo) que es reflejado por el objeto hacia el sensor.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Detectan objetos a grandes distancias (hasta 200 metros en configuraciones de barrera).</li>
+                    <li>Funcionan en condiciones de polvo o humedad sin interferencias importantes.</li>
+                    <li>Detectan una gran variedad de materiales, incluidos objetos transparentes.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Ofrecen salidas digitales y pueden configurarse con barreras de luz, conectándose mediante tres o cuatro hilos.</p>
+            </section>
+
+            <section>
+                <h2>Sensores Magnéticos</h2>
+                <p><strong>Funcionalidad:</strong> Detectan la presencia de un campo magnético, generalmente generado por un imán. Reaccionan cuando el campo entra o sale de su rango de detección.</p>
+                <p><strong>Características:</strong></p>
+                <ul>
+                    <li>Utilizados en aplicaciones donde el objeto contiene un imán.</li>
+                    <li>Pueden detectar a través de paredes no ferrosas.</li>
+                    <li>Altamente resistentes a vibraciones y entornos contaminantes.</li>
+                </ul>
+                <p><strong>Modo de Comunicación:</strong> Proporcionan una señal digital y utilizan configuraciones de salida estándar PNP/NPN.</p>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="node_modules/reveal.js/dist/reveal.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

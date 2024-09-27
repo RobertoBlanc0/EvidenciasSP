@@ -1,0 +1,16 @@
+/* Ajuste del tamaño del texto en las diapositivas */
+.reveal h2 {
+    font-size: 1.5em; /* Tamaño más pequeño para los títulos */
+}
+
+.reveal p, .reveal ul {
+    font-size: 0.9em; /* Tamaño reducido para el contenido */
+}
+
+.reveal ul {
+    margin-left: 20px; /* Ajuste de los márgenes para listas */
+}
+
+.reveal li {
+    font-size: 0.9em; /* Tamaño reducido para las listas */
+}
